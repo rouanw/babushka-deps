@@ -1,5 +1,7 @@
 # osx.rb
 
+#apps
+
 dep "1Password 4.app" do
   source "https://d13itkw33a7sus.cloudfront.net/dist/1P/mac4/1Password-4.4.3.zip"
 end
@@ -121,4 +123,21 @@ dep "all-osx-apps" do
   requires "VirtualBox.app"
   requires "VLC.app"
   requires "WebStorm.app"
+end
+
+# settings
+
+dep "auto-hide-dock" do
+  met? {
+    shell("defaults read com.apple.dock autohide") == "1"
+  }
+
+  meet {
+    shell("defaults write com.apple.dock autohide -bool true")
+    shell("killall -HUP Dock")
+  }
+end
+
+dep "all-osx-settings" do
+  requires "auto-hide-dock"
 end
