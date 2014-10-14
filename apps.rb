@@ -1,5 +1,3 @@
-# apps.rb
-
 dep "asciidoc.bin" do
   installs "asciidoc"
 end

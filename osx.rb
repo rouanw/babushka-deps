@@ -1,5 +1,3 @@
-# osx.rb
-
 #apps
 
 dep "1Password 4.app" do
