@@ -97,7 +97,7 @@ dep "WebStorm.app" do
 end
 
 dep "all-osx-apps" do
-  requires "1Password 4.app"
+  # requires "1Password 4.app"
   # requires "Adium.app"
   requires "Alfred.app"
   # requires "Atom.app"
