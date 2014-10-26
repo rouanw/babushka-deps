@@ -53,10 +53,10 @@ end
 dep "all-packaged-apps" do
   requires "cdargs.bin"
   requires "git.bin"
-  requires "gradle.bin"
+  # requires "gradle.bin"
   # requires "maven.bin"
   # requires "mongodb.bin"
-  requires "mysql.bin"
+  # requires "mysql.bin"
   requires "openssl.bin"
   requires "pidof.bin"
   requires "python.bin"
