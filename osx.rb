@@ -96,7 +96,9 @@ dep "WebStorm.app" do
   source "http://download.jetbrains.com/webstorm/WebStorm-8.0.5.dmg"
 end
 
-dep "node"
+dep "CCMenu.app" do
+  source "http://sourceforge.net/projects/ccmenu/files/CCMenu/1.7/ccmenu-1.7-b.dmg/download"
+end
 
 dep "all-osx-apps" do
   # requires "1Password 4.app"
@@ -105,6 +107,7 @@ dep "all-osx-apps" do
   requires "Atom.app"
   requires "BetterTouchTool.app"
   requires "Caffeine.app"
+  requires "CCMenu.app"
   # requires "Dash.app"
   # requires "Dropbox.app"
   # requires "Eloquent.app"
